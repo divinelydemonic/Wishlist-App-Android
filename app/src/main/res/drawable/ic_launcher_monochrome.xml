@@ -1,0 +1,40 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+  <!-- Heart -->
+  <path
+      android:fillColor="#000000"
+      android:pathData="M48,72
+            C44,68 32,58 32,48
+            C32,42 36,38 42,38
+            C46,38 48,41 48,41
+            C48,41 50,38 54,38
+            C60,38 64,42 64,48
+            C64,58 52,68 48,72z"/>
+
+  <!-- Notebook lines -->
+  <path
+      android:strokeColor="#000000"
+      android:strokeWidth="3"
+      android:strokeLineCap="round"
+      android:pathData="M56,46h18"/>
+  <path
+      android:strokeColor="#000000"
+      android:strokeWidth="3"
+      android:strokeLineCap="round"
+      android:pathData="M56,56h18"/>
+  <path
+      android:strokeColor="#000000"
+      android:strokeWidth="3"
+      android:strokeLineCap="round"
+      android:pathData="M56,66h14"/>
+
+  <!-- Pencil -->
+  <path
+      android:fillColor="#000000"
+      android:pathData="M66,70l10,-10c1,-1 3,-1 4,0l2,2c1,1 1,3 0,4l-10,10l-6,2z"/>
+
+</vector>
