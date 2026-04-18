@@ -92,18 +92,43 @@ flowchart LR
 ## 🖼 Screenshots
 
 <p>
-    <img src="images/1.jpeg" height="500px">
-    <img src="images/2.jpeg" height="500px">
-    <img src="images/3.jpeg" height="500px">
-    <img src="images/4.jpeg" height="500px">
-    <img src="images/5.jpeg" height="500px">
-    <img src="images/6.jpeg" height="500px">
-    <img src="images/7.jpeg" height="500px">
-    <img src="images/8.jpeg" height="500px">
-    <img src="images/9.jpeg" height="500px">
-    <img src="images/10.jpeg" height="500px">
-    <img src="images/11.jpeg" height="500px">
-    <img src="images/12.jpeg" height="500px">
+
+### 🫟 Splash Screen
+<img src="images/1.jpeg" height="500px">
+
+### 📱 Home Screen (Empty State)
+<img src="images/2.jpeg" height="500px">
+
+### ➕ Add Wish Screen
+<img src="images/3.jpeg" height="500px">
+
+### ‼️ Wish Adding Snackbar
+<img src="images/4.jpeg" height="500px">
+
+### 📝 Text length responsive textboxes
+<img src="images/5.jpeg" height="500px">
+
+### ↕ Scrollable Lazy Column
+<p>
+<img src="images/6.jpeg" height="500px">
+<img src="images/7.jpeg" height="500px">
+</p>
+
+### ✏️ Edit Wish Screen
+<img src="images/8.jpeg" height="500px">
+
+### ➡️ Right swipe -> snaps back
+<img src="images/9.jpeg" height="500px">
+
+### 🗑 Swipe to Delete Action (left swipe)
+<img src="images/10.jpeg" height="500px">
+ 
+### ↩️ Undo Delete Snackbar
+<img src="images/11.jpeg" height="500px">
+
+### 💾 Room Database Integration (reopening app)
+<img src="images/12.jpeg" height="500px">
+
 </p>
 
 ## 🎥 Demo
