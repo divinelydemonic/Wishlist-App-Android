@@ -133,7 +133,7 @@ flowchart LR
 
 ## 🎥 Demo
 
-YouTube link: https://youtube.com/shorts/iZfAt8N_L74?si=bBQl0wBGl_xUJwAs
+**YouTube link**: https://youtube.com/shorts/iZfAt8N_L74?si=bBQl0wBGl_xUJwAs
 
 ---
 
