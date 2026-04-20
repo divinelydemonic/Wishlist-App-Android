@@ -50,6 +50,7 @@ fun Navigation(modifier: Modifier) {
                 navArgument("id") {
                     type = NavType.LongType
                     defaultValue = 0L
+                    nullable = false
                 }
             ),
 
