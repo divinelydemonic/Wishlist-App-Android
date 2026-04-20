@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package kr.android.wishlistapp
+package kr.android.wishlistapp.ui.screens
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.border
@@ -21,6 +21,8 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import kotlinx.coroutines.launch
+import kr.android.wishlistapp.R
+import kr.android.wishlistapp.WishViewModel
 import kr.android.wishlistapp.data.Wish
 
 @Composable
@@ -85,10 +87,9 @@ fun AddEditDetailsView(
             AppBarView(
                 title =
                     if (id != 0L) stringResource(id = R.string.update_wish)
-                    else stringResource(id = R.string.add_wish)
-            ){
-                navController.navigateUp()
-            }
+                    else stringResource(id = R.string.add_wish),
+                onBackNavClicked = { navController.navigateUp() }
+            )
         }
     ) {
         Column(

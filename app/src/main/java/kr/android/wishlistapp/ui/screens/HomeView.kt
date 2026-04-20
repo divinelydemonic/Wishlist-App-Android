@@ -1,4 +1,4 @@
-package kr.android.wishlistapp
+package kr.android.wishlistapp.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -16,16 +16,18 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kr.android.wishlistapp.R
+import kr.android.wishlistapp.navigation.Screen
+import kr.android.wishlistapp.WishViewModel
 import kr.android.wishlistapp.data.Wish
 
 @Composable
@@ -103,7 +105,7 @@ fun HomeView(
         }
     ) {
 
-        val wishList = viewModel.getAllWishes.collectAsState(initial = listOf())
+        val wishList = viewModel.getAllWishes.collectAsState(initial = listOf())    //initially empty list
 
         val scope = rememberCoroutineScope()
 
@@ -234,7 +236,7 @@ fun HomeView(
                 }
 
                 // CUSTOM TIMER: Wait 2 seconds, then confirm delete if not undone
-                kotlinx.coroutines.delay(3000L)
+                delay(2000L)
 
                 // If the wish is STILL marked for deletion after 2 seconds
                 if (viewModel.recentlyDeletedWish.value != null) {

@@ -1,23 +1,27 @@
-package kr.android.wishlistapp
+package kr.android.wishlistapp.navigation
 
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
-import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.google.accompanist.navigation.animation.AnimatedNavHost
+import kr.android.wishlistapp.navigation.Screen
+import kr.android.wishlistapp.WishViewModel
+import kr.android.wishlistapp.ui.screens.AddEditDetailsView
+import kr.android.wishlistapp.ui.screens.HomeView
 
 
-@OptIn(ExperimentalAnimationApi::class)
+@OptIn(ExperimentalAnimationApi::class, ExperimentalMaterial3Api::class)
 @Composable
 fun Navigation(modifier: Modifier) {
 
@@ -43,7 +47,6 @@ fun Navigation(modifier: Modifier) {
         ) {
             HomeView(viewModel, navController)
         }
-
         composable(
             route = Screen.AddScreen.route + "/{id}",
             arguments = listOf(
@@ -79,8 +82,8 @@ fun Navigation(modifier: Modifier) {
                 )
             }
         ) { entry ->
-            //if add button is clicked, the id is null, and hence 0, and the add screen opens
-            //if edit/item is clicked, the id is not null and the screen with that id opens
+            //if add button is clicked, the id is 0, and the add screen opens
+            //if edit/item is clicked, the id is not 0 and the screen with that id opens for updating
 
             val id = entry.arguments?.getLong("id") ?: 0L
 

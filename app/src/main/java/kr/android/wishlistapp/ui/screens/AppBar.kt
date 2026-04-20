@@ -1,7 +1,8 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package kr.android.wishlistapp
+package kr.android.wishlistapp.ui.screens
 
+import android.R
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
@@ -43,15 +44,15 @@ fun AppBarView(
                 fontWeight = FontWeight.Bold,
                 fontSize = 25.sp,
                 style = MaterialTheme.typography.displayLarge,
-                color = colorResource(id = android.R.color.black),
+                color = colorResource(id = R.color.black),
                 modifier = Modifier
                     .padding(start = 4.dp)
-                    .heightIn(max = 28.dp)
+                    .heightIn(max = 29.dp)
             )
         },
         windowInsets = WindowInsets(top = 30.dp),
         colors = TopAppBarDefaults.topAppBarColors(
-            containerColor = colorResource(id = R.color.pink)
+            containerColor = colorResource(id = kr.android.wishlistapp.R.color.pink)
         ),
         navigationIcon = navigationIcon
     )
