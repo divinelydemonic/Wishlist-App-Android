@@ -1,4 +1,4 @@
-# 📝 Wishlist App
+# 📝 WishNest-Wishlist App
 
 A simple, elegant, and fully offline **Wishlist Manager Android App** built using modern Android development practices. This app allows users to create, edit, and manage their wishes seamlessly with a clean UI and smooth interactions.
 
