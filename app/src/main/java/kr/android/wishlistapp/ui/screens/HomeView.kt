@@ -82,7 +82,7 @@ fun HomeView(
             }
         },
         topBar = {
-            AppBarView(title = "Wishlist")
+            AppBarView(title = "WishNest")
         },
         floatingActionButton = {
             FloatingActionButton(
